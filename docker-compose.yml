@@ -1,6 +1,6 @@
 services:
   app:
-    build: .
+    image: mazenbahgat/lab8-app:v1
     container_name: lab8-app
     ports:
       - "3000:3000"
