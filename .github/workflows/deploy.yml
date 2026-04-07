@@ -19,7 +19,7 @@ jobs:
       - name: Log in to Docker Hub2
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DH_UN }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push app image
@@ -34,7 +34,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH }}
           script: |
             if [ ! -d ~/lab8-cicd ]; then
               git clone https://github.com/${{ github.repository }} ~/lab8-cicd
