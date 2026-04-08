@@ -1,10 +1,10 @@
 db = db.getSiblingDB('lab8db');
 
 db.tasks.insertMany([
-  { title: 'Milk', completed: true },
-  { title: 'Eggs', completed: true },
-  { title: 'Bread', completed: false },
-  { title: 'Butter', completed: false },
-  { title: 'Orange juice', completed: false },
-  { id: 5, name: 'Tea',  status: 'pending' }
+  { id: 1, name: 'Milk',          status: 'done'    },
+  { id: 2, name: 'Eggs',          status: 'done'    },
+  { id: 3, name: 'Bread',         status: 'pending' },
+  { id: 4, name: 'Butter',        status: 'pending' },
+  { id: 5, name: 'Orange juice',  status: 'pending' },
+  { id: 6, name: 'Tea',  status: 'pending' }
 ]);
